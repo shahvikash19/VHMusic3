@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QuoteVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="quoteVC" id="Y6W-OH-hqX" customClass="quoteVC" customModule="VHMusic3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="gq9-rk-S45">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-L3-UKE">
+                                <rect key="frame" x="5" y="59" width="383" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Motivation Text logo" translatesAutoresizingMaskIntoConstraints="NO" id="X22-u3-Qms">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="X22-u3-Qms" firstAttribute="top" secondItem="uDq-L3-UKE" secondAttribute="top" id="5r7-TP-sPd"/>
+                                    <constraint firstItem="X22-u3-Qms" firstAttribute="leading" secondItem="uDq-L3-UKE" secondAttribute="leading" id="HfS-go-kSK"/>
+                                    <constraint firstAttribute="trailing" secondItem="X22-u3-Qms" secondAttribute="trailing" id="IAI-C9-Bx8"/>
+                                    <constraint firstAttribute="height" constant="100" id="T7L-HK-VuM"/>
+                                    <constraint firstAttribute="bottom" secondItem="X22-u3-Qms" secondAttribute="bottom" id="wwD-Nu-rrn"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R92-F5-Fp0">
+                                <rect key="frame" x="20" y="164" width="193" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="elU-IB-NpV"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="IMAGES"/>
+                                    <segment title="TEXT"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment:" destination="Y6W-OH-hqX" eventType="valueChanged" id="5qi-nD-VXy"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EQm-sM-4sG">
+                                <rect key="frame" x="0.0" y="214" width="393" height="555"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T31-zW-a2I">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="eGA-nO-9mz"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="QV7-Uy-Mc2"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.23529411764705882" green="0.6588235294117647" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gq9-rk-S45" secondAttribute="trailing" id="3bl-9q-6RG"/>
+                            <constraint firstItem="R92-F5-Fp0" firstAttribute="top" secondItem="uDq-L3-UKE" secondAttribute="bottom" constant="5" id="48j-B2-crb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gq9-rk-S45" secondAttribute="bottom" id="6VR-V5-exX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uDq-L3-UKE" secondAttribute="trailing" constant="5" id="78i-Ul-DHk"/>
+                            <constraint firstItem="EQm-sM-4sG" firstAttribute="top" secondItem="R92-F5-Fp0" secondAttribute="bottom" id="7y8-qX-Ydo"/>
+                            <constraint firstItem="uDq-L3-UKE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="PH6-Tt-tKn"/>
+                            <constraint firstItem="EQm-sM-4sG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RZE-BT-xUW"/>
+                            <constraint firstItem="R92-F5-Fp0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Vjc-Ye-oMD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="R92-F5-Fp0" secondAttribute="trailing" constant="180" id="a69-UA-e7t"/>
+                            <constraint firstItem="gq9-rk-S45" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aDJ-VK-aqV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EQm-sM-4sG" secondAttribute="bottom" id="efR-Fz-1U6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EQm-sM-4sG" secondAttribute="trailing" id="egl-va-Y8e"/>
+                            <constraint firstItem="gq9-rk-S45" firstAttribute="top" secondItem="R92-F5-Fp0" secondAttribute="bottom" id="pOA-6U-brX"/>
+                            <constraint firstItem="uDq-L3-UKE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="x3i-QP-UOn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_Quotes" selectedImage="ic_Quotes_selected" id="VUS-05-dt1"/>
+                    <navigationItem key="navigationItem" id="UNx-9R-Evc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionviewQ" destination="EQm-sM-4sG" id="z0O-Ov-BKo"/>
+                        <outlet property="segment" destination="R92-F5-Fp0" id="62h-AF-4si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4802.2900763358775" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Motivation Text logo" width="160" height="35"/>
+        <image name="ic_Quotes" width="29" height="35"/>
+        <image name="ic_Quotes_selected" width="29" height="34"/>
+    </resources>
+</document>

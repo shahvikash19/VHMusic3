@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20057D7B2B6555280095D675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057D7A2B6555280095D675 /* AppDelegate.swift */; };
+		20057D7D2B6555280095D675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057D7C2B6555280095D675 /* SceneDelegate.swift */; };
+		20057D7F2B6555280095D675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057D7E2B6555280095D675 /* ViewController.swift */; };
+		20057D822B6555280095D675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D802B6555280095D675 /* Main.storyboard */; };
+		20057D842B65552A0095D675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20057D832B65552A0095D675 /* Assets.xcassets */; };
+		20057D872B65552A0095D675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D852B65552A0095D675 /* LaunchScreen.storyboard */; };
+		20057D932B6555EE0095D675 /* quoteVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D922B6555EE0095D675 /* quoteVC.storyboard */; };
+		20057D952B6555FF0095D675 /* quoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057D942B6555FF0095D675 /* quoteVC.swift */; };
+		20057D972B6556130095D675 /* musicVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D962B6556130095D675 /* musicVC.storyboard */; };
+		20057D992B65561E0095D675 /* musicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057D982B65561E0095D675 /* musicVC.swift */; };
+		20057D9B2B65562F0095D675 /* storyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D9A2B65562F0095D675 /* storyVC.storyboard */; };
+		20057D9F2B6556480095D675 /* profileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20057D9E2B6556480095D675 /* profileVC.storyboard */; };
+		20057DA12B6556630095D675 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057DA02B6556630095D675 /* profileVC.swift */; };
+		20057DA42B655A190095D675 /* imagesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057DA22B655A190095D675 /* imagesCVC.swift */; };
+		20057DA52B655A190095D675 /* imagesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20057DA32B655A190095D675 /* imagesCVC.xib */; };
+		20057DA82B655A4B0095D675 /* TextCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20057DA62B655A4B0095D675 /* TextCVC.swift */; };
+		20057DA92B655A4B0095D675 /* TextCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20057DA72B655A4B0095D675 /* TextCVC.xib */; };
+		209993952B6CE21A0093BCD1 /* musicCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209993932B6CE21A0093BCD1 /* musicCVC.swift */; };
+		209993962B6CE21A0093BCD1 /* musicCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209993942B6CE21A0093BCD1 /* musicCVC.xib */; };
+		209993992B6CE4DD0093BCD1 /* storyCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209993972B6CE4DD0093BCD1 /* storyCVC.swift */; };
+		2099939A2B6CE4DD0093BCD1 /* storyCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209993982B6CE4DD0093BCD1 /* storyCVC.xib */; };
+		2099939E2B6E2D6E0093BCD1 /* storyNextPG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2099939D2B6E2D6E0093BCD1 /* storyNextPG.storyboard */; };
+		209993A02B6E2D830093BCD1 /* storyNextPG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099939F2B6E2D830093BCD1 /* storyNextPG.swift */; };
+		209993A22B6F73FE0093BCD1 /* musicnxtPG.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209993A12B6F73FE0093BCD1 /* musicnxtPG.storyboard */; };
+		209993A42B6F74160093BCD1 /* musicnxtPG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209993A32B6F74160093BCD1 /* musicnxtPG.swift */; };
+		209993A72B6F88B60093BCD1 /* VHMusic3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 209993A52B6F88B60093BCD1 /* VHMusic3.xcdatamodeld */; };
+		20E274102B6CBAC9003D985F /* storyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E2740F2B6CBAC9003D985F /* storyVC.swift */; };
+		7C21076DDB95C42D3C1941B6 /* Pods_VHMusic3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B599D1E21A03A8E4F0D9EFA1 /* Pods_VHMusic3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		155C457B6ED56E2A7AE4266F /* Pods-VHMusic3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHMusic3.debug.xcconfig"; path = "Target Support Files/Pods-VHMusic3/Pods-VHMusic3.debug.xcconfig"; sourceTree = "<group>"; };
+		20057D772B6555280095D675 /* VHMusic3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHMusic3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20057D7A2B6555280095D675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20057D7C2B6555280095D675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20057D7E2B6555280095D675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20057D812B6555280095D675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20057D832B65552A0095D675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20057D862B65552A0095D675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20057D882B65552A0095D675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20057D922B6555EE0095D675 /* quoteVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = quoteVC.storyboard; sourceTree = "<group>"; };
+		20057D942B6555FF0095D675 /* quoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteVC.swift; sourceTree = "<group>"; };
+		20057D962B6556130095D675 /* musicVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = musicVC.storyboard; sourceTree = "<group>"; };
+		20057D982B65561E0095D675 /* musicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicVC.swift; sourceTree = "<group>"; };
+		20057D9A2B65562F0095D675 /* storyVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = storyVC.storyboard; sourceTree = "<group>"; };
+		20057D9E2B6556480095D675 /* profileVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profileVC.storyboard; sourceTree = "<group>"; };
+		20057DA02B6556630095D675 /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
+		20057DA22B655A190095D675 /* imagesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesCVC.swift; sourceTree = "<group>"; };
+		20057DA32B655A190095D675 /* imagesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imagesCVC.xib; sourceTree = "<group>"; };
+		20057DA62B655A4B0095D675 /* TextCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCVC.swift; sourceTree = "<group>"; };
+		20057DA72B655A4B0095D675 /* TextCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCVC.xib; sourceTree = "<group>"; };
+		209993932B6CE21A0093BCD1 /* musicCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicCVC.swift; sourceTree = "<group>"; };
+		209993942B6CE21A0093BCD1 /* musicCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = musicCVC.xib; sourceTree = "<group>"; };
+		209993972B6CE4DD0093BCD1 /* storyCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyCVC.swift; sourceTree = "<group>"; };
+		209993982B6CE4DD0093BCD1 /* storyCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = storyCVC.xib; sourceTree = "<group>"; };
+		2099939D2B6E2D6E0093BCD1 /* storyNextPG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = storyNextPG.storyboard; sourceTree = "<group>"; };
+		2099939F2B6E2D830093BCD1 /* storyNextPG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyNextPG.swift; sourceTree = "<group>"; };
+		209993A12B6F73FE0093BCD1 /* musicnxtPG.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = musicnxtPG.storyboard; sourceTree = "<group>"; };
+		209993A32B6F74160093BCD1 /* musicnxtPG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicnxtPG.swift; sourceTree = "<group>"; };
+		209993A62B6F88B60093BCD1 /* VHMusic3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VHMusic3.xcdatamodel; sourceTree = "<group>"; };
+		20E2740F2B6CBAC9003D985F /* storyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyVC.swift; sourceTree = "<group>"; };
+		7BC53F29A6E9B67DB896E9A7 /* Pods-VHMusic3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHMusic3.release.xcconfig"; path = "Target Support Files/Pods-VHMusic3/Pods-VHMusic3.release.xcconfig"; sourceTree = "<group>"; };
+		B599D1E21A03A8E4F0D9EFA1 /* Pods_VHMusic3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VHMusic3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20057D742B6555280095D675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C21076DDB95C42D3C1941B6 /* Pods_VHMusic3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20057D6E2B6555280095D675 = {
+			isa = PBXGroup;
+			children = (
+				20057D792B6555280095D675 /* VHMusic3 */,
+				20057D782B6555280095D675 /* Products */,
+				9D9267DBC23FD955E3F0021F /* Pods */,
+				CA06E1BB85E20E542E7BC9F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20057D782B6555280095D675 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20057D772B6555280095D675 /* VHMusic3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20057D792B6555280095D675 /* VHMusic3 */ = {
+			isa = PBXGroup;
+			children = (
+				20057D912B6555650095D675 /* Quote */,
+				20057D902B6555590095D675 /* Music */,
+				20057D8F2B65554C0095D675 /* Storys */,
+				20057D8E2B65553C0095D675 /* Profile */,
+				20057D7A2B6555280095D675 /* AppDelegate.swift */,
+				20057D7C2B6555280095D675 /* SceneDelegate.swift */,
+				20057D7E2B6555280095D675 /* ViewController.swift */,
+				20057D802B6555280095D675 /* Main.storyboard */,
+				20057D832B65552A0095D675 /* Assets.xcassets */,
+				20057D852B65552A0095D675 /* LaunchScreen.storyboard */,
+				20057D882B65552A0095D675 /* Info.plist */,
+				209993A52B6F88B60093BCD1 /* VHMusic3.xcdatamodeld */,
+			);
+			path = VHMusic3;
+			sourceTree = "<group>";
+		};
+		20057D8E2B65553C0095D675 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				20057D9E2B6556480095D675 /* profileVC.storyboard */,
+				20057DA02B6556630095D675 /* profileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		20057D8F2B65554C0095D675 /* Storys */ = {
+			isa = PBXGroup;
+			children = (
+				20057D9A2B65562F0095D675 /* storyVC.storyboard */,
+				20E2740F2B6CBAC9003D985F /* storyVC.swift */,
+				2099939D2B6E2D6E0093BCD1 /* storyNextPG.storyboard */,
+				2099939F2B6E2D830093BCD1 /* storyNextPG.swift */,
+				209993972B6CE4DD0093BCD1 /* storyCVC.swift */,
+				209993982B6CE4DD0093BCD1 /* storyCVC.xib */,
+			);
+			path = Storys;
+			sourceTree = "<group>";
+		};
+		20057D902B6555590095D675 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				20057D962B6556130095D675 /* musicVC.storyboard */,
+				20057D982B65561E0095D675 /* musicVC.swift */,
+				209993942B6CE21A0093BCD1 /* musicCVC.xib */,
+				209993932B6CE21A0093BCD1 /* musicCVC.swift */,
+				209993A12B6F73FE0093BCD1 /* musicnxtPG.storyboard */,
+				209993A32B6F74160093BCD1 /* musicnxtPG.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		20057D912B6555650095D675 /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				20057D922B6555EE0095D675 /* quoteVC.storyboard */,
+				20057D942B6555FF0095D675 /* quoteVC.swift */,
+				20057DA32B655A190095D675 /* imagesCVC.xib */,
+				20057DA22B655A190095D675 /* imagesCVC.swift */,
+				20057DA72B655A4B0095D675 /* TextCVC.xib */,
+				20057DA62B655A4B0095D675 /* TextCVC.swift */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		9D9267DBC23FD955E3F0021F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				155C457B6ED56E2A7AE4266F /* Pods-VHMusic3.debug.xcconfig */,
+				7BC53F29A6E9B67DB896E9A7 /* Pods-VHMusic3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA06E1BB85E20E542E7BC9F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B599D1E21A03A8E4F0D9EFA1 /* Pods_VHMusic3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20057D762B6555280095D675 /* VHMusic3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20057D8B2B65552A0095D675 /* Build configuration list for PBXNativeTarget "VHMusic3" */;
+			buildPhases = (
+				FFAFF357311DD7F6A929F987 /* [CP] Check Pods Manifest.lock */,
+				20057D732B6555280095D675 /* Sources */,
+				20057D742B6555280095D675 /* Frameworks */,
+				20057D752B6555280095D675 /* Resources */,
+				7CB171EC7AF114DF4B1A1CD3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VHMusic3;
+			productName = VHMusic3;
+			productReference = 20057D772B6555280095D675 /* VHMusic3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20057D6F2B6555280095D675 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					20057D762B6555280095D675 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 20057D722B6555280095D675 /* Build configuration list for PBXProject "VHMusic3" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20057D6E2B6555280095D675;
+			productRefGroup = 20057D782B6555280095D675 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20057D762B6555280095D675 /* VHMusic3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20057D752B6555280095D675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20057DA52B655A190095D675 /* imagesCVC.xib in Resources */,
+				20057DA92B655A4B0095D675 /* TextCVC.xib in Resources */,
+				209993A22B6F73FE0093BCD1 /* musicnxtPG.storyboard in Resources */,
+				20057D932B6555EE0095D675 /* quoteVC.storyboard in Resources */,
+				20057D872B65552A0095D675 /* LaunchScreen.storyboard in Resources */,
+				2099939E2B6E2D6E0093BCD1 /* storyNextPG.storyboard in Resources */,
+				2099939A2B6CE4DD0093BCD1 /* storyCVC.xib in Resources */,
+				20057D9F2B6556480095D675 /* profileVC.storyboard in Resources */,
+				20057D972B6556130095D675 /* musicVC.storyboard in Resources */,
+				20057D9B2B65562F0095D675 /* storyVC.storyboard in Resources */,
+				20057D842B65552A0095D675 /* Assets.xcassets in Resources */,
+				209993962B6CE21A0093BCD1 /* musicCVC.xib in Resources */,
+				20057D822B6555280095D675 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CB171EC7AF114DF4B1A1CD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHMusic3/Pods-VHMusic3-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHMusic3/Pods-VHMusic3-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VHMusic3/Pods-VHMusic3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAFF357311DD7F6A929F987 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VHMusic3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20057D732B6555280095D675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20057D7F2B6555280095D675 /* ViewController.swift in Sources */,
+				20E274102B6CBAC9003D985F /* storyVC.swift in Sources */,
+				20057D992B65561E0095D675 /* musicVC.swift in Sources */,
+				20057DA82B655A4B0095D675 /* TextCVC.swift in Sources */,
+				20057DA12B6556630095D675 /* profileVC.swift in Sources */,
+				209993952B6CE21A0093BCD1 /* musicCVC.swift in Sources */,
+				20057DA42B655A190095D675 /* imagesCVC.swift in Sources */,
+				209993A02B6E2D830093BCD1 /* storyNextPG.swift in Sources */,
+				20057D7B2B6555280095D675 /* AppDelegate.swift in Sources */,
+				20057D7D2B6555280095D675 /* SceneDelegate.swift in Sources */,
+				20057D952B6555FF0095D675 /* quoteVC.swift in Sources */,
+				209993A72B6F88B60093BCD1 /* VHMusic3.xcdatamodeld in Sources */,
+				209993A42B6F74160093BCD1 /* musicnxtPG.swift in Sources */,
+				209993992B6CE4DD0093BCD1 /* storyCVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20057D802B6555280095D675 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20057D812B6555280095D675 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20057D852B65552A0095D675 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20057D862B65552A0095D675 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20057D892B65552A0095D675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20057D8A2B65552A0095D675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20057D8C2B65552A0095D675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155C457B6ED56E2A7AE4266F /* Pods-VHMusic3.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VHMusic3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trycatch.VHMusic3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20057D8D2B65552A0095D675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC53F29A6E9B67DB896E9A7 /* Pods-VHMusic3.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VHMusic3/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trycatch.VHMusic3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20057D722B6555280095D675 /* Build configuration list for PBXProject "VHMusic3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20057D892B65552A0095D675 /* Debug */,
+				20057D8A2B65552A0095D675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20057D8B2B65552A0095D675 /* Build configuration list for PBXNativeTarget "VHMusic3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20057D8C2B65552A0095D675 /* Debug */,
+				20057D8D2B65552A0095D675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		209993A52B6F88B60093BCD1 /* VHMusic3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				209993A62B6F88B60093BCD1 /* VHMusic3.xcdatamodel */,
+			);
+			currentVersion = 209993A62B6F88B60093BCD1 /* VHMusic3.xcdatamodel */;
+			path = VHMusic3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20057D6F2B6555280095D675 /* Project object */;
+}
